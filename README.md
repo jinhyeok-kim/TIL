@@ -4,3 +4,5 @@
 ---
 ## Python
 - pyautogui
+- python design pattern
+- python method
