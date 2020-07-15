@@ -15,4 +15,5 @@ class Book:
   # __init__ : 어떤 클래스 객체가 만들어질 때, 자동으로 호출 되어 객체가 갖게 될 여러가지 성질을 정해줌
   # 생성자 역할이랑 비슷한거 같기도?(같은건가)
   def __init__(self):
+    # self.setData(title, price, author)
     print('책 객체 생성')
