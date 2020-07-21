@@ -8,4 +8,4 @@
 - python method
 
 ## Web
-- CSS
+- CSS tutorial
