@@ -1,8 +1,11 @@
 # Today I Learned
-- ì‹œì‘ì¼ : 2020.07.06
+- ½ÃÀÛÀÏ : 2020.07.06
 
 ---
 ## Python
 - pyautogui
 - python design pattern
 - python method
+
+## Web
+- CSS
