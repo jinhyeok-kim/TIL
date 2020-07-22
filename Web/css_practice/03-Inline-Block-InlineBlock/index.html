@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline Example</title>
+  <style>
+    .box {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      /* block은 element가 크기와 상관없이 그 옆에 다른 element가 위치하는 것을 허용하지 않는 것 */
+      /* display: block; */
+      /*
+        박스는 인라인-블록이나 블록 둘 중에 하나가 되야함
+        인라인-블록을 삭제하면, 디폴트 값에 따라 블록 형태로 위치
+      */
+      /* display: inline-block; */
+      /*
+        블록: 옆에 아무것도 없는 것
+              박스 폭, 높이가 존재하지만 옆에 어떤 element도 놓을 수 없음
+        인라인-블록: 서로서로 붙는 것
+              박스 폭, 높이가 존재하고 서로서로 옆에 놓을 수 있음
+        인라인: 박스의 모든 property 설정 값을 지움
+              인라인만 쓰면 박스가 사라짐!!!
+              span에서 내가 작성한 컨텐츠의 폭, 높이 만큼의 스타일만 적용됨, 이 전에 작성한 박스의 폭, 높이는 적용되지 않음
+              인라인이라고 하는 순간 박스가 아니라 텍스트처럼 적용 됨
+      */
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <span class="box">1</span>
+  <span class="box">1</span>
+  <span class="box">1</span>
+</body>
+
+</html>
