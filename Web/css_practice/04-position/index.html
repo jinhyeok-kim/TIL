@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Position</title>
+  <style>
+    body,
+    html {
+      /* default 값 상쇄를 위한 역할*/
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* default 값 상쇄를 위한 역할*/
+      height: 400%;
+      background-color: red;
+    }
+
+    /* Position Fixed */
+
+    #boxOne {
+      height: 300px;
+      width: 300px;
+      background-color: yellow;
+      /* static: default 값
+          element를 붙이면 그 자리에 그대로 있음
+      */
+      position: static;
+    }
+
+    #boxTwo {
+      height: 300px;
+      width: 100%;
+      background-color: green;
+      /* fixed: 스크롤을 해도 화면에 고정
+        element가 그 위치에 오버랩해서 고정됨
+        상하좌우 정할 수 있음
+      */
+      position: fixed;
+      bottom: 30%;
+      left: 0;
+    }
+
+    /* Absolute
+      fixed와 비슷하게 어디든 붙일 수 있지만, 스크롤한다고 보이지는 않음
+    */
+    .abs-box {
+      width: 400px;
+      height: 400px;
+      background-color: yellow;
+      position: relative;
+      /* Remember to put relative here or the child will go to the body*/
+    }
+
+    .abs-child {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="abs-box">
+    <div class="abs-child"></div>
+  </div>
+  <!-- Position Fixed
+  <div id="boxOne">
+    <div class="box-child"></div>
+  </div>
+  <div id="boxTwo">
+    <div class="box-child"></div>
+  </div> -->
+</body>
+
+</html>
