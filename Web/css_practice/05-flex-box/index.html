@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    /*
+      플렉스를 사용할 때는 칠드런 박스에 적용하지 않음.
+      오직 부모 클래스에만 적용하면 됨.
+      부모를 플랙스 컨테이너로 만들면, 칠드런 박스들을 어디로 이동할지 명령할 필요 없음.
+    */
+    .father {
+      display: flex;
+      /*
+        flex-direction이 row 일때(default)
+        justify-content는 수평으로 적용
+        align-items는 수직으로 적용
+
+        flex-direction이 column이 되면
+        justify-content는 수직
+        align-items는 수평
+      */
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      height: 100%;
+      /*
+        no-wrap일때는 창을 줄이면 그 창에 맞춰서 폭이 조정
+        폭을 유지하고 박스를 떨어뜨리고 싶을 땐 wrap
+      */
+      flex-wrap: wrap;
+    }
+
+    /*
+    .box {
+      background-color: red;
+      color: white;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+    */
+
+    /*
+      박스의 숫자를 움직이기 위해 flex로 만듦
+    */
+    .box {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+  </div>
+</body>
+
+</html>
