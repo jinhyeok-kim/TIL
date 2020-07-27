@@ -11,16 +11,13 @@
       background-color: red;
     }
 
-    .box:nth-child(3n+2) {
-      background-color: pink;
+    /* input과 box가 형제다*/
+    input+.box {
+      border: 1px solid yellow;
     }
 
     .container>.box {
       background-color: yellow;
-    }
-
-    .box {
-      border: 1px solid yellow;
     }
 
     .box {
@@ -30,7 +27,13 @@
       border: 1px solid black;
     }
 
+    /*2 5 8 ...*/
+    .box:nth-child(3n+2) {
+      background-color: pink;
+    }
+
     .child {
+      background-color: purple;
       width: 40px;
     }
   </style>
