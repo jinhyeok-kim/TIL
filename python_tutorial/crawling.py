@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 
 finance_list = []
 
-finance_list.append("https://finance.naver.com/item/main.nhn?code=272210")
-# finance_list.append("https://finance.naver.com/item/main.nhn?code=005380")
+finance_list.append("https://finance.naver.com/item/main.nhn?code=005380")
+finance_list.append("https://finance.naver.com/item/main.nhn?code=005385")
 
 for url in finance_list:
     result = requests.get(url)
