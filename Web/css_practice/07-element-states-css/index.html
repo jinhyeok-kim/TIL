@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Selectors and Pseudo Selectors</title>
+  <style>
+    .box {
+      background-color: red;
+      font-size: 40px;
+    }
+
+    /*
+      hover하면,  활성화
+    */
+    .box:hover {
+      background-color: pink;
+    }
+
+    /*
+      box를 클릭하면, 활성화
+    */
+    .box:active {
+      background-color: green;
+    }
+
+    /*
+      focus
+    */
+    .box:focus {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">lalalala</div>
+</body>
+
+</html>
