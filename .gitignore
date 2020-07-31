@@ -141,3 +141,7 @@ cython_debug/
 
 path.py
 .pylintrc
+
+*.jpeg
+*.png
+*.pdf
