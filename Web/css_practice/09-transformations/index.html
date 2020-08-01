@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transformations</title>
+  <style>
+    /*
+      transformations는 html 문서의 element들을 변경, 모습이 변화는 효과를 뜻함
+      https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+
+      transition이랑 합쳐줬을때 더 큰 효과를 발휘한다.
+      transform: translateX(10px) rotate(10deg) translateY(5px);
+      transform: skew(30deg, 20deg);
+      .box {
+        width: 500px;
+        height: 500px;
+        background: red;
+      }
+      */
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: transform .5s ease-in-out;
+    }
+
+    .box:hover {
+      transform: rotate(1turn) scale(.5, .5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
