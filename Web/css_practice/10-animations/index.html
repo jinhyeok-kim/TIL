@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animations</title>
+  <style>
+    /*
+      Animations 는 hover와 같은 작용없이 스스로 움직이도록 만드는 것
+      keyframes는 css로 하여금 내가 애니메이션을 생성했다는 것을 알려준다.
+      
+      2 step이 필요. 
+      (1)from, (2)to
+
+      from-to 대신 0%-50%-100%를 쓸 수도 있다.
+    */
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+    }
+
+    /* @keyframes 애니메이션이름 */
+    @keyframes scaleAndRotateSquare {
+
+      /*
+      from {
+        transform: none;
+      }
+
+      to {
+        transform: rotate(1turn) scale(.5, .5);
+      }
+      */
+      0% {
+        transform: none;
+      }
+
+      50% {
+        transform: rotate(1turn) scale(.5, .5);
+        background-color: white;
+      }
+
+      100% {
+        transform: none;
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
