@@ -1,5 +1,5 @@
 # Today I Learned
-- ½ÃÀÛÀÏ : 2020.07.06
+- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : 2020.07.06
 
 ---
 ## Python
@@ -9,3 +9,4 @@
 
 ## Web
 - CSS tutorial
+- Kakao talk clone

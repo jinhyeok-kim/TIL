@@ -145,3 +145,5 @@ path.py
 *.jpeg
 *.png
 *.pdf
+
+.DS_Store
