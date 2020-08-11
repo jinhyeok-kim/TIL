@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Find | KaKao Clone</title>
-  </head>
 
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">
-          13:54
-        </span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
-        <span class="status-bar__battery-level">100%</span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Find | KaKao Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span class="status-bar__clock">
+        13:54
+      </span>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Find</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
+    <div class="status-bar__column">
+      <i class="fas fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <i class="fas fa-battery-full"></i>
+      <span class="status-bar__battery-level">100%</span>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__header-column">
+      <h1 class="header__title">Find</h1>
+    </div>
+    <div class="header__header-column">
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+  </header>
+  <main class="find">
+    <header class="find__header">
+      <ul class="find__header-list">
+        <ul class="find__header-btn header-btn">
+          <li>
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-3x"></i>
+            </span>
+            <span class="header-btn__title">
+              QR Code
+            </span>
+          </li>
+          <li>
+            <span class="header-btn__icon">
+              <i class="fas fa-user-plus fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Add by Contacts
+            </span>
+          </li>
+          <li>
+            <span class="header-btn__icon">
+              <i class="fas fa-passport fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Add by ID
+            </span>
+          </li>
+          <li>
+            <span class="header-btn__icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Invite
+            </span>
+          </li>
+        </ul>
       </ul>
-    </nav>
-  </body>
+    </header>
+    <ul class="find__recommended">
+      <h5 class="find__title">
+        Recommend friends
+      </h5>
+      <li class="find__freind friend friend--lg">
+        <div class="find__column">
+          <img src="images/Quakka.jpg" alt="" class="g-avatar">
+          <div class="friend__content">
+            <span class="friend__name">
+              name
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <div class="friend__add-btn">
+            <i class="fas fa-user-plus"></i>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="friends.html" class="nav__list-link">
+          <i class="far fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="index.html" class="nav__list-link">
+          <i class="far fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="find.html" class="nav__list-link">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>
