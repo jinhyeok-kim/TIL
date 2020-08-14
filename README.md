@@ -9,4 +9,4 @@
 
 ## Web
 - CSS tutorial
-- Kakao talk clone
+- Kakao talk clone[in progress]
